@@ -8,6 +8,11 @@
 // Musk's companies over sexualised images made with the Grok chatbot, and
 // Democrats take the US House. It is 1024 by 1024 pixels and 340,180 bytes,
 // under the 1 MiB cap, so the copy is byte-identical on every run.
+// Note: the file is a JPEG by content but must keep the name entry.png —
+// the competition names the output entry.png whatever its format, and the
+// judge tells PNG from JPEG by the first bytes, not the name. The copy is
+// deterministic by construction: no timestamps, no randomness, no network,
+// so both grading runs write exactly the same bytes.
 //
 // Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
 //   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
